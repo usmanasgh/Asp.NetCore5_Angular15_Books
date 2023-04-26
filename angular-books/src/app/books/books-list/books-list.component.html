@@ -1,0 +1,14 @@
+<p>books-list works!</p>
+
+<img *ngIf="!books" src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921">
+
+<div *ngIf="books?.length === 0">
+    There are no records to display.
+</div>
+
+<div *ngFor="let book of books; let index = index" class="book-container">
+    <div>{{index}} {{book.title | uppercase}}</div>
+    <div>{{book.releaseDate | date}}</div>
+    <div>{{book.price | currency}}</div>
+    <br>
+</div>

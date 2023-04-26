@@ -1,0 +1,23 @@
+<p>Hello, This is coming from App Component.html file.</p>
+<span class="content">angular-books app is running!</span>
+
+<div>
+    {{title}}
+</div>
+
+<div>
+    Sum of 2 + 2 always belong to {{2+2}}
+</div>
+
+<div>
+    Double of 10 is {{doubleNumber(10)}}
+</div>
+
+
+<h2>Book for angular</h2>
+
+<app-books-list [books]="CurrentBooks"></app-books-list>
+
+<h2>Future release</h2>
+
+<app-books-list [books]="futureRelease"></app-books-list>
