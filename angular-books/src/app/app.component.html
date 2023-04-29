@@ -1,14 +1,19 @@
-<h2>Book for angular</h2>
 
-<app-books-list [books]="CurrentBooks"></app-books-list>
+<app-menu></app-menu>
 
-<h2>Future release</h2>
+<!-- <h2>Book for angular</h2> -->
 
-<app-books-list [books]="futureRelease"></app-books-list>
+<div>
+    <h2>Available books</h2>
+    <app-books-list [books]="CurrentBooks"></app-books-list>
+
+    <h2>Future release</h2>
+    <app-books-list [books]="futureRelease"></app-books-list>
+</div>
 
 <!-- MUA: Below code is just extra code -- Can be deleted -- Only here for learning perspective! -->
 
-<p>Hello, This is coming from App Component.html file.</p>
+<!-- <p>Hello, This is coming from App Component.html file.</p>
 <span class="content">angular-books app is running!</span>
 
 <div>
@@ -21,4 +26,4 @@
 
 <div>
     Double of 10 is {{doubleNumber(10)}}
-</div>
+</div> -->
