@@ -1,14 +1,27 @@
-<p>books-list works!</p>
+<app-generic-list [list]="books">  
 
-<img *ngIf="!books" src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921">
+    <!-- MUA: Passing another content a different content using container -->
+    <!-- <ng-container loading> 
+            This is loading...
+    </ng-container>  -->
 
-<div *ngIf="books?.length === 0">
-    There are no records to display.
-</div>
+    <!-- MUA: Passing another content a different content using container -->
+    <!-- <ng-container empty> 
+            This is empty different message...
+    </ng-container> -->
 
-<div *ngFor="let book of books; let index = index" class="book-container">
-    <div>{{index}} {{book.title | uppercase}}</div>
-    <div>{{book.releaseDate | date}}</div>
-    <div>{{book.price | currency}}</div>
-    <br>
-</div>
+    <ng-container content>
+        <div *ngFor="let book of books; let index = index" class="book-container">
+            <div>{{index}} {{book.title | uppercase}}
+                <button style="margin-left: 1rem;" (click)="remove(index)">Remove</button>
+            </div>
+            <div>{{book.releaseDate | date}}</div>
+            <div>{{book.price | currency}}</div>
+            <br>
+        </div>
+    </ng-container>
+
+</app-generic-list>
+
+
+
