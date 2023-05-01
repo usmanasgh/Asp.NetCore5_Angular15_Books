@@ -1,7 +1,21 @@
 
 <app-menu></app-menu>
 
-<app-rating (onRating)="handleRating($event)"></app-rating>
+<!-- <input type="text" (input)="title = $event.target.value"/> -->
+
+<div>
+    <input type="text" (input)="title = $any($event.target).value"/>
+</div>
+
+<div>
+    <input type="checkbox" checked (change)="display = !display" /> Display
+</div>
+
+<app-life-cycle-test *ngIf="display" [title]="title"></app-life-cycle-test>
+
+
+<!-- MUA : Uncomment to watch the star ratting -->
+<!-- <app-rating (onRating)="handleRating($event)"></app-rating> -->
 
 <!-- <h2>Book for angular</h2> -->
 

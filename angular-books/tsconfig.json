@@ -6,10 +6,12 @@
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
+    "strictPropertyInitialization": false, // MUA : Disable initialization errors
+    //"strictNullChecks": false, // MUA : Added new seeting
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
-    "noImplicitAny": false, // Adding by MUA
+    "noImplicitAny": false, // Adding by MUA 
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "declaration": false,
@@ -25,10 +27,13 @@
       "dom"
     ]
   },
-  "angularCompilerOptions": {
+
+    "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
-    "strictTemplates": true
+    "strictTemplates": true,
+   // "strictDomEventTypes": false // MUA : $event.target.value (possible null value error) resolved
+
   }
 }

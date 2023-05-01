@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   
   ngOnInit(): void {
-    setTimeout(()=>{
+    setTimeout( ()=> {
 
       //this.books = [];
 
@@ -41,14 +41,12 @@ export class AppComponent implements OnInit {
 
   CurrentBooks;
   futureRelease;
-
+  title = 'angular-books';
+  display = true;
 
   handleRating(rate : number){
     alert('The user selected '+ rate);
   }
-
-
-  title = 'angular-books';
 
   doubleNumber(n:number)
   {
