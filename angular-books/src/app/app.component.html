@@ -1,9 +1,11 @@
 
 <app-menu></app-menu>
 
+<app-rating (onRating)="handleRating($event)"></app-rating>
+
 <!-- <h2>Book for angular</h2> -->
 
-<div>
+<div class="container">
     <h2>Available books</h2>
     <app-books-list [books]="CurrentBooks"></app-books-list>
 

@@ -13,7 +13,7 @@
     <ng-container content>
         <div *ngFor="let book of books; let index = index" class="book-container">
             <div>{{index}} {{book.title | uppercase}}
-                <button style="margin-left: 1rem;" (click)="remove(index)">Remove</button>
+                <button style="margin-left: 1rem;" (click)="remove(index)">Delete</button>
             </div>
             <div>{{book.releaseDate | date}}</div>
             <div>{{book.price | currency}}</div>

@@ -1,0 +1,10 @@
+
+<!-- MUA: handle mouseenter Event -->
+<!-- MUA: checked class will be inserted if SelectedRate is greater than index -->
+
+<mat-icon *ngFor="let i of maxRatingArry; let index = index"
+(mouseenter)="handleMouseEnter(index)"
+(mouseleave)="handleMouseLeave()"
+(click)="rate(index)"
+[ngClass]="{checked : SelectedRate > index}"
+>star</mat-icon>

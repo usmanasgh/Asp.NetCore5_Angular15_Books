@@ -8,14 +8,18 @@ import { BooksListComponent } from './books/books-list/books-list.component';
 import { GenericListComponent } from './utilities/generic-list/generic-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
-import { MenuComponent } from './menu/menu.component';  
+import { MenuComponent } from './menu/menu.component';
+import { RatingComponent } from './utilities/rating/rating.component';
+import { LifeCycleTestComponent } from './life-cycle-test/life-cycle-test.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BooksListComponent,
     GenericListComponent,
-    MenuComponent
+    MenuComponent,
+    RatingComponent,
+    LifeCycleTestComponent
   ],
   imports: [
     BrowserModule,

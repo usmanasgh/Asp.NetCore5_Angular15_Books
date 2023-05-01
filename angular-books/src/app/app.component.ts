@@ -42,6 +42,12 @@ export class AppComponent implements OnInit {
   CurrentBooks;
   futureRelease;
 
+
+  handleRating(rate : number){
+    alert('The user selected '+ rate);
+  }
+
+
   title = 'angular-books';
 
   doubleNumber(n:number)
