@@ -1,9 +1,10 @@
 
+<!-- MUA: app-menu is outside <router-outlet> because we want to show it for every page. -->
 <app-menu></app-menu>
 
 <!-- <input type="text" (input)="title = $event.target.value"/> -->
 
-<div>
+<!-- <div>
     <input type="text" (input)="title = $any($event.target).value"/>
 </div>
 
@@ -11,7 +12,7 @@
     <input type="checkbox" checked (change)="display = !display" /> Display
 </div>
 
-<app-life-cycle-test *ngIf="display" [title]="title"></app-life-cycle-test>
+<app-life-cycle-test *ngIf="display" [title]="title"></app-life-cycle-test> -->
 
 
 <!-- MUA : Uncomment to watch the star ratting -->
@@ -20,11 +21,9 @@
 <!-- <h2>Book for angular</h2> -->
 
 <div class="container">
-    <h2>Available books</h2>
-    <app-books-list [books]="CurrentBooks"></app-books-list>
+    
+    <router-outlet></router-outlet>
 
-    <h2>Future release</h2>
-    <app-books-list [books]="futureRelease"></app-books-list>
 </div>
 
 <!-- MUA: Below code is just extra code -- Can be deleted -- Only here for learning perspective! -->

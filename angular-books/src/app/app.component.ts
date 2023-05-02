@@ -7,43 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 
 
-export class AppComponent implements OnInit {
-  
-  ngOnInit(): void {
-    setTimeout( ()=> {
+export class AppComponent  {
 
-      //this.books = [];
 
-      this.CurrentBooks = [{
-        title : "Angular: Up and Running: Learning Angular, Step by Step",
-        releaseDate : new Date(),
-        price : 9.99
-      },
-      {
-        title : "Data Structures And Algorithams",
-        releaseDate : new Date(),
-        price : 14.99
-      }];
-
-      this.futureRelease = [{
-        title : "React ",
-        releaseDate : new Date(),
-        price : 5.99
-      },
-      {
-        title : "Theory of automata",
-        releaseDate : new Date(),
-        price : 12.49
-      }];
-
-    }, 1000);
-  }
-
-  CurrentBooks;
-  futureRelease;
   title = 'angular-books';
   display = true;
-
+  
+   
   handleRating(rate : number){
     alert('The user selected '+ rate);
   }

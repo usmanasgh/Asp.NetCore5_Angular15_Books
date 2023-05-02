@@ -11,13 +11,24 @@
     </ng-container> -->
 
     <ng-container content>
-        <div *ngFor="let book of books; let index = index" class="book-container">
-            <div>{{index}} {{book.title | uppercase}}
-                <button style="margin-left: 1rem;" (click)="remove(index)">Delete</button>
+        <div class="books-container">
+            <div *ngFor="let book of books; let index = index" class="book-container">
+                
+                <a><img [src]="book.poster" alt="book"></a>
+                <p>{{book.title}}</p>
+
+                <div>
+                    <a mat-flat-button color="primary">Edit</a>
+                    <button mat-flat-button color="warn" type="button">Delete</button>
+                </div>
+
+                <!-- <div>{{index}} {{book.title | uppercase}}
+                    <button style="margin-left: 1rem;" (click)="remove(index)">Delete</button>
+                </div>
+                <div>{{book.releaseDate | date}}</div>
+                <div>{{book.price | currency}}</div> -->
+                <br>
             </div>
-            <div>{{book.releaseDate | date}}</div>
-            <div>{{book.price | currency}}</div>
-            <br>
         </div>
     </ng-container>
 
