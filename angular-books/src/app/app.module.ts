@@ -16,6 +16,10 @@ import { IndexGenresComponent } from './genres/index-genres.component';
 import { CreateGenreComponent } from './genres/create-genre/create-genre.component';
 import { IndexWritersComponent } from './writers/index-writers/index-writers.component';
 import { CreateWritersComponent } from './writers/create-writers/create-writers.component';
+import { CreateBooksComponent } from './books/create-books/create-books.component';
+import { EditWritersComponent } from './writers/edit-writers/edit-writers.component';
+import { EditBooksComponent } from './books/edit-books/edit-books.component';
+import { EditGenreComponent } from './genres/edit-genre/edit-genre.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +33,11 @@ import { CreateWritersComponent } from './writers/create-writers/create-writers.
     IndexGenresComponent,
     CreateGenreComponent,
     IndexWritersComponent,
-    CreateWritersComponent
+    CreateWritersComponent,
+    CreateBooksComponent,
+    EditWritersComponent,
+    EditBooksComponent,
+    EditGenreComponent
   ],
   imports: [
     BrowserModule,

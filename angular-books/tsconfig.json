@@ -9,7 +9,7 @@
     "strictPropertyInitialization": false, // MUA : Disable initialization errors
     //"strictNullChecks": false, // MUA : Added new seeting
     "noImplicitOverride": true,
-    "noPropertyAccessFromIndexSignature": true,
+    "noPropertyAccessFromIndexSignature": false,
     "noImplicitReturns": true,
     "noImplicitAny": false, // Adding by MUA 
     "noFallthroughCasesInSwitch": true,
