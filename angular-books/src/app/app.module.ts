@@ -1,5 +1,5 @@
  import { NgModule } from '@angular/core';
-//import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+ //import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -7,6 +7,9 @@ import { AppComponent } from './app.component';
 import { BooksListComponent } from './books/books-list/books-list.component';
 import { GenericListComponent } from './utilities/generic-list/generic-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReactiveFormsModule } from '@angular/forms';
+
+
 import { MaterialModule } from './material/material.module';
 import { MenuComponent } from './menu/menu.component';
 import { RatingComponent } from './utilities/rating/rating.component';
@@ -20,6 +23,7 @@ import { CreateBooksComponent } from './books/create-books/create-books.componen
 import { EditWritersComponent } from './writers/edit-writers/edit-writers.component';
 import { EditBooksComponent } from './books/edit-books/edit-books.component';
 import { EditGenreComponent } from './genres/edit-genre/edit-genre.component';
+
 
 @NgModule({
   declarations: [
@@ -43,7 +47,8 @@ import { EditGenreComponent } from './genres/edit-genre/edit-genre.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

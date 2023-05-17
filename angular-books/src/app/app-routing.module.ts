@@ -10,6 +10,7 @@ import { CreateWritersComponent } from './writers/create-writers/create-writers.
 import { EditWritersComponent } from './writers/edit-writers/edit-writers.component';
 import { CreateBooksComponent } from './books/create-books/create-books.component';
 import {EditBooksComponent} from './books/edit-books/edit-books.component';
+import { NotFoundError } from 'rxjs';
 
 const routes: Routes = [
   {path:'', component:HomeComponent},
@@ -25,7 +26,9 @@ const routes: Routes = [
   {path:'writers/edit/:id', component:EditWritersComponent},
   
   {path:'books/create', component:CreateBooksComponent},
-  {path:'books/edit/:id', component:EditBooksComponent}
+  {path:'books/edit/:id', component:EditBooksComponent},
+  // {path:'**',component:HomeComponent} // MUA: Default component
+   {path:'**',redirectTo:''}
 
 ];
 

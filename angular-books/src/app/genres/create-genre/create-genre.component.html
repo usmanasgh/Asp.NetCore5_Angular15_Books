@@ -1,1 +1,16 @@
-<h2>Create Genre</h2>>
+<h2>Create Genre</h2>
+
+<p>something is not right on the page. I'll fix later, it hides the textbox and cancel button.</p>
+
+<form (submit)="saveChanges()" [formGroup]="form">
+    <mat-form-field appearance="outline">
+
+        <mat-label>Name*</mat-label>
+        <input class="custom-color" formControlName="name" matInput />
+    </mat-form-field>
+
+    <div>
+        <button mat-flat-button color="primary">Save changes</button>
+        <a class="custom-color" mat-stroked-button routerLink="/genres">Cancel</a>
+    </div>
+</form>
