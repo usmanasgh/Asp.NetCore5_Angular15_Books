@@ -5,3 +5,12 @@ button{
 .custom-color{
     color: black;
 }
+
+/* Border */
+.mat-form-field-appearance-outline .mat-form-field-outline {
+    color: grey;
+  }
+  /* Font color */
+  input.mat-input-element {
+    color: grey;
+  }

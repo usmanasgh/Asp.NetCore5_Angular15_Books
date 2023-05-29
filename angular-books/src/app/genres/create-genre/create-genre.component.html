@@ -1,16 +1,20 @@
 <h2>Create Genre</h2>
 
-<p>something is not right on the page. I'll fix later, it hides the textbox and cancel button.</p>
-
 <form (submit)="saveChanges()" [formGroup]="form">
+    
     <mat-form-field appearance="outline">
 
-        <mat-label>Name*</mat-label>
-        <input class="custom-color" formControlName="name" matInput />
+        <mat-label>Name</mat-label>
+        
+        <input formControlName="name" matInput />
+
+        <mat-error *ngIf="form.invalid">{{getErrorMessageFieldName()}}</mat-error>
+
     </mat-form-field>
 
     <div>
-        <button mat-flat-button color="primary">Save changes</button>
-        <a class="custom-color" mat-stroked-button routerLink="/genres">Cancel</a>
+        <button mat-flat-button color="primary" [disabled]="form.invalid">Save changes</button>
+        <button mat-stroked-button color="warn" routerLink="/genres">Cancel</button>
     </div>
+
 </form>

@@ -7,8 +7,8 @@ import { AppComponent } from './app.component';
 import { BooksListComponent } from './books/books-list/books-list.component';
 import { GenericListComponent } from './utilities/generic-list/generic-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
-
 
 import { MaterialModule } from './material/material.module';
 import { MenuComponent } from './menu/menu.component';
@@ -48,6 +48,7 @@ import { EditGenreComponent } from './genres/edit-genre/edit-genre.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
+    FormsModule,
     ReactiveFormsModule
   ],
   providers: [],
