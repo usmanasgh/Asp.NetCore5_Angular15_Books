@@ -11,6 +11,7 @@ import { EditWritersComponent } from './writers/edit-writers/edit-writers.compon
 import { CreateBooksComponent } from './books/create-books/create-books.component';
 import {EditBooksComponent} from './books/edit-books/edit-books.component';
 import { NotFoundError } from 'rxjs';
+import { BookFilterComponent } from './books/book-filter/book-filter.component';
 
 const routes: Routes = [
   {path:'', component:HomeComponent},
@@ -27,6 +28,9 @@ const routes: Routes = [
   
   {path:'books/create', component:CreateBooksComponent},
   {path:'books/edit/:id', component:EditBooksComponent},
+
+  {path: 'books/filter', component:BookFilterComponent},
+
   // {path:'**',component:HomeComponent} // MUA: Default component
    {path:'**',redirectTo:''}
 
