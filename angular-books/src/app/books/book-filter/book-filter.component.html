@@ -27,8 +27,10 @@
         <mat-checkbox formControlName="futureRelease">Future Releases</mat-checkbox>
     </div>
 
-    <div>
+    <div class="clearContainer">
         <button mat-flat-button (click)="clearForm()" color="warn">Clear</button>
     </div>
+
+<app-books-list [books]="books"></app-books-list>
 
 </form>

@@ -1,0 +1,25 @@
+<form (submit)="saveChanges()" [formGroup]="form">
+
+        <mat-form-field appearance="outline">
+
+            <mat-label>Name</mat-label>
+            <input formControlName="name" matInput/>
+            <mat-error>The name field is required</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+                <mat-label>Date of Birth</mat-label>
+                <input formControlName="dateOfBirth" matInput [matDatepicker]="picker" />
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+
+        <div>
+            
+            <button mat-flat-button color="primary" [disabled]="form.invalid">Save Changes</button>
+            <a mat-stroked-button routerLink="/writers">Cancel</a>
+        
+        </div>
+
+</form>
+

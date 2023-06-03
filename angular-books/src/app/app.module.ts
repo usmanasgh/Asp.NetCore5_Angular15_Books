@@ -25,6 +25,7 @@ import { EditBooksComponent } from './books/edit-books/edit-books.component';
 import { EditGenreComponent } from './genres/edit-genre/edit-genre.component';
 import { FormGenreComponent } from './genres/form-genre/form-genre.component';
 import { BookFilterComponent } from './books/book-filter/book-filter.component';
+import { FormWriterComponent } from './writers/form-writer/form-writer.component';
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import { BookFilterComponent } from './books/book-filter/book-filter.component';
     EditBooksComponent,
     EditGenreComponent,
     FormGenreComponent,
-    BookFilterComponent
+    BookFilterComponent,
+    FormWriterComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { writerCreationDTO } from '../writers.model';
 
 @Component({
   selector: 'app-edit-writes',
@@ -16,12 +17,18 @@ constructor(private activatedRoute:ActivatedRoute){}
 //   });
 // }
 
+model : writerCreationDTO = {name: 'Usman Asghar', dateOfBirth : new Date()}
+
 ngOnInit() {
   this.activatedRoute.params.subscribe(params => {
     const id = params['id'];
-    alert(id); 
+    //alert(id); 
     //console.log(id);
   });
 }
+
+  saveChanges(writerCreationDTO : writerCreationDTO){
+    console.log(writerCreationDTO);
+  }
 
 }
