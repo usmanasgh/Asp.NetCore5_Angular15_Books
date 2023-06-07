@@ -17,7 +17,7 @@ constructor(private activatedRoute:ActivatedRoute){}
 //   });
 // }
 
-model : writerCreationDTO = {name: 'Usman Asghar', dateOfBirth : new Date()}
+model : writerCreationDTO = {name: 'Usman Asghar', dateOfBirth : new Date(), picture : ''}
 
 ngOnInit() {
   this.activatedRoute.params.subscribe(params => {

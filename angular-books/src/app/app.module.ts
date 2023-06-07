@@ -26,6 +26,7 @@ import { EditGenreComponent } from './genres/edit-genre/edit-genre.component';
 import { FormGenreComponent } from './genres/form-genre/form-genre.component';
 import { BookFilterComponent } from './books/book-filter/book-filter.component';
 import { FormWriterComponent } from './writers/form-writer/form-writer.component';
+import { InputImgComponent } from './utilities/input-img/input-img.component';
 
 
 @NgModule({
@@ -47,7 +48,8 @@ import { FormWriterComponent } from './writers/form-writer/form-writer.component
     EditGenreComponent,
     FormGenreComponent,
     BookFilterComponent,
-    FormWriterComponent
+    FormWriterComponent,
+    InputImgComponent
   ],
   imports: [
     BrowserModule,
